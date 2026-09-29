@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Informativa privacy del client OAuth personale Obsidian Vault Sync.">
+  <title>Informativa privacy · Obsidian Vault Sync</title>
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./"><span class="brand-mark" aria-hidden="true">OV</span><span>Obsidian Vault Sync</span></a>
+    <nav aria-label="Navigazione principale"><a href="privacy.html" aria-current="page">Privacy</a><a href="terms.html">Condizioni d’uso</a></nav>
+  </header>
+  <main class="page document">
+    <p class="eyebrow">Informativa privacy · Ultimo aggiornamento: 29 settembre 2026</p>
+    <h1>Come vengono trattati i dati</h1>
+    <p class="intro">Questa informativa descrive il client OAuth personale usato con rclone per sincronizzare file Obsidian e Google Drive. Non è un servizio web che riceve le note.</p>
+    <h2>Dati e autorizzazioni</h2>
+    <p>Quando autorizzato, rclone può accedere ai file e ai metadati dell’account Google Drive. L’ambito <code>drive</code> richiesto dal client consente di visualizzare e gestire tutti i file di Drive. La configurazione rclone prevista indicherà la cartella <code>Obsidian/Vault</code> come radice del remote, ma questa impostazione limita il normale percorso operativo di rclone, non i permessi OAuth concessi a Google.</p>
+    <p>I file interessati possono includere note Markdown, allegati, nomi e metadati necessari alla sincronizzazione. Quando l’utente autorizza rclone, il token OAuth viene conservato localmente nella configurazione rclone sul computer dell’utente; chiunque possa leggere quel file potrebbe usare il token secondo i permessi concessi.</p>
+    <h2>Uso e trasferimento</h2>
+    <p>rclone viene eseguito sul computer dell’utente e trasferisce i file direttamente tra il vault locale e Google Drive. Il gestore di questo progetto non riceve, ospita o vende il contenuto dei file e non usa un proprio server per elaborarlo. Google tratta i dati archiviati in Drive secondo le proprie condizioni e informative.</p>
+    <p>Il client OAuth non invia automaticamente note a servizi di intelligenza artificiale. Se l’utente sceglie di condividere note con GPT, Codex, Claude Code o altri servizi, il trattamento da parte di quei fornitori è regolato dalle rispettive informative.</p>
+    <h2>Conservazione e revoca</h2>
+    <p>Le copie locali e quelle in Drive restano finché l’utente non le elimina. L’utente può revocare l’accesso dalle impostazioni di sicurezza del proprio account Google e rimuovere la configurazione rclone locale. La revoca non cancella automaticamente i file già presenti in Drive o sul computer.</p>
+    <h2>Visite al sito informativo</h2>
+    <p>Le pagine sono statiche e non includono moduli, strumenti di analisi o cookie propri. Se ospitate con GitHub Pages, GitHub registra e conserva l’indirizzo IP dei visitatori per motivi di sicurezza; si applica anche la <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">informativa privacy di GitHub</a>.</p>
+    <h2>Contatti</h2>
+    <p>Per domande sull’autorizzazione o su questa informativa, usa l’indirizzo di supporto mostrato nella schermata di consenso Google dell’app.</p>
+    <p class="notice"><strong>Nota sull’ambito:</strong> Google classifica <code>drive</code> come ambito ad accesso esteso. Prima di autorizzare il client, verifica che il nome dell’app e l’account Google nella schermata siano quelli attesi.</p>
+  </main>
+  <footer><a href="./">Home</a><a href="terms.html">Condizioni d’uso</a></footer>
+</body>
+</html>
